@@ -52,7 +52,7 @@ namespace Ulda_problemas
         {
 
         }
-       
+
 
 
 
@@ -88,7 +88,7 @@ namespace Ulda_problemas
                                    $"PVN summa: {PVN_summa:C}\n" +
                                    $"Rekina summa: {rekina_summa:C}\n";
 
-                
+
 
 
 
@@ -110,8 +110,8 @@ namespace Ulda_problemas
                 // izvada tekstu ja ir kaut kas nepareiz
                 rtb_reikins.Text = "lohs tu ievadi pareizi.";
             }
-            
-            
+
+
 
 
         }
@@ -135,7 +135,7 @@ namespace Ulda_problemas
 
                 a.Close();
 
-               
+
 
 
 
@@ -177,22 +177,47 @@ namespace Ulda_problemas
         {
             if (tb_vards.Text != "")
             {
-                SQLiteConnection sqlite_conn;
-                sqlite_conn = CreateConeection();
+                using (SQLiteConnection sqlite_conn = CreateConnection())
+                {
+                    sqlite_conn.Open();
 
-                SQLiteCommand sqlite_cmd;
-                sqlite_cmd = sqlite_conn.CreateCommand();
-                sqlite_cmd.CommandText = "INSERT INTO rekin.db(Vards, Veltijums, Platums, aukstums, garums,cena) VALUES('" + tb_vards.Text + "','" + tb_veltijums.Text + "','" + tb_platums.Text + "','" + tb_augstums.Text + "', '" + tb_garums.Text + "', '" + tb_cena.Text + "');";
-                sqlite_cmd.ExecuteNonQuery();
+                    using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                    {
+                        // Use parameters to prevent SQL injection
+                        sqlite_cmd.CommandText = "INSERT INTO Ulda(Vards, Velejums, platums, augstums, Garums, cena) " +
+                                                 "VALUES(@Vards, @Velejums, @platums, @augstums, @Garums, @cena);";
+
+                        // Add parameters to the command
+                        sqlite_cmd.Parameters.AddWithValue("@Vards", tb_vards.Text);
+                        sqlite_cmd.Parameters.AddWithValue("@Velejums", tb_veltijums.Text);
+                        sqlite_cmd.Parameters.AddWithValue("@platums", tb_platums.Text);
+                        sqlite_cmd.Parameters.AddWithValue("@augstums", tb_augstums.Text);
+                        sqlite_cmd.Parameters.AddWithValue("@Garums", tb_garums.Text);
+                        sqlite_cmd.Parameters.AddWithValue("@cena", tb_cena.Text);
+
+                        // Execute the command
+                        sqlite_cmd.ExecuteNonQuery();
+                    }
+                }
             }
             else
             {
                 MessageBox.Show("Lūdzu ievadiet nosaukumu");
             }
-
-
-
         }
+
+        static SQLiteConnection CreateConnection()
+        {
+            SQLiteConnection reikin = new SQLiteConnection("Data Source=reikin.db; Version=3; New=true; Compress=True;");
+            return reikin;
+        }
+
+
+
+
+
+
+
         static SQLiteConnection CreateConeection()
         {
             SQLiteConnection reikin;
@@ -208,8 +233,26 @@ namespace Ulda_problemas
             }
             return reikin;
         }
-    }
 
+        private void Dzest_Click(object sender, EventArgs e)
+        {
+
+            {
+                SQLiteConnection sqlite_conn;
+                sqlite_conn =CreateConnection();
+
+                SQLiteCommand sqlite_cmd;
+                sqlite_cmd = sqlite_conn.CreateCommand();
+                sqlite_cmd.CommandText = "DELETE FROM Ulda WHERE ID=" + dz_id.Text + ";";
+                sqlite_cmd.ExecuteNonQuery();
+                dz_id.Clear();
+
+            }
+        }
+    }
 }
+            
+
+
 
       

@@ -44,6 +44,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Dzest = new System.Windows.Forms.Button();
+            this.dz_id = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tb_vards
@@ -193,11 +196,40 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(83, 398);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "dz_ID";
+            // 
+            // Dzest
+            // 
+            this.Dzest.Location = new System.Drawing.Point(159, 418);
+            this.Dzest.Name = "Dzest";
+            this.Dzest.Size = new System.Drawing.Size(75, 23);
+            this.Dzest.TabIndex = 19;
+            this.Dzest.Text = "dzēst";
+            this.Dzest.UseVisualStyleBackColor = true;
+            this.Dzest.Click += new System.EventHandler(this.Dzest_Click);
+            // 
+            // dz_id
+            // 
+            this.dz_id.Location = new System.Drawing.Point(53, 418);
+            this.dz_id.Name = "dz_id";
+            this.dz_id.Size = new System.Drawing.Size(100, 20);
+            this.dz_id.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dz_id);
+            this.Controls.Add(this.Dzest);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -239,6 +271,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Dzest;
+        private System.Windows.Forms.TextBox dz_id;
     }
 }
 
