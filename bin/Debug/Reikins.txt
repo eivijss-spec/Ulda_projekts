@@ -1,0 +1,6 @@
+Klienta vārds enija
+vēlējuma teksts gud
+platums mm 935625
+garums mm 2466243
+augstums mm 2
+kokmatriāla cena 4523
