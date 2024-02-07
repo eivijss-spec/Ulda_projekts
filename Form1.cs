@@ -239,7 +239,7 @@ namespace Ulda_problemas
 
             {
                 SQLiteConnection sqlite_conn;
-                sqlite_conn =CreateConnection();
+                sqlite_conn = CreateConeection();
 
                 SQLiteCommand sqlite_cmd;
                 sqlite_cmd = sqlite_conn.CreateCommand();
@@ -249,6 +249,7 @@ namespace Ulda_problemas
 
             }
         }
+
     }
 }
             
