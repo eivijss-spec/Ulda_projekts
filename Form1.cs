@@ -64,18 +64,18 @@ namespace Ulda_problemas
         private void button1_Click(object sender, EventArgs e)
         {   //Pārveido vēlējumu stringu uz int
             string varda_ga = tb_veltijums.Text;
-            int gar = varda_ga.Length;
+            double gar = varda_ga.Length;
 
             // Pārbauda vai visas nepieciešamās vērtības ir 
             if (
-                int.TryParse(tb_platums.Text, out int platums) &&
-                int.TryParse(tb_garums.Text, out int garums) &&
-                int.TryParse(tb_augstums.Text, out int augstums) &&
-                int.TryParse(tb_cena.Text, out int materiala_cena))
+                double.TryParse(tb_platums.Text, out double platums) &&
+                double.TryParse(tb_garums.Text, out double garums) &&
+                double.TryParse(tb_augstums.Text, out double augstums) &&
+                double.TryParse(tb_cena.Text, out double materiala_cena))
             {
                 //  saksaita characters tb_veltijums un reizina ar 1.2
                 string inputText = tb_veltijums.Text;
-                int charCount = inputText.Length;
+                double charCount = inputText.Length;
                 double multipliedCount = charCount * 1.2;
 
                 // veic matemātiku
@@ -250,6 +250,10 @@ namespace Ulda_problemas
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
             
