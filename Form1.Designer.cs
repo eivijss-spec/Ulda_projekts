@@ -41,12 +41,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.rtb_reikins = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.Dzest = new System.Windows.Forms.Button();
             this.dz_id = new System.Windows.Forms.TextBox();
+            this.button1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // tb_vards
@@ -192,17 +193,17 @@
             this.rtb_reikins.Text = "";
             this.rtb_reikins.TextChanged += new System.EventHandler(this.rtb_reikins_TextChanged);
             // 
-            // button1
+            // button11
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(508, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 44);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Reiķins";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.ForeColor = System.Drawing.Color.Black;
+            this.button11.Location = new System.Drawing.Point(508, 18);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(216, 44);
+            this.button11.TabIndex = 14;
+            this.button11.Text = "Reiķins";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -253,26 +254,37 @@
             // 
             // dz_id
             // 
-            this.dz_id.BackColor = System.Drawing.Color.White;
+            this.dz_id.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dz_id.ForeColor = System.Drawing.Color.Black;
             this.dz_id.Location = new System.Drawing.Point(53, 418);
             this.dz_id.Name = "dz_id";
             this.dz_id.Size = new System.Drawing.Size(100, 20);
             this.dz_id.TabIndex = 20;
+            this.dz_id.TextChanged += new System.EventHandler(this.dz_id_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(274, 59);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 50);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Button1";
+            this.button1.UseSelectable = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCoral;
+            this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.BackgroundImage = global::Ulda_problemas.Properties.Resources.c31e0028ff648a5cd3f262e4b2a6085b;
             this.ClientSize = new System.Drawing.Size(815, 501);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dz_id);
             this.Controls.Add(this.Dzest);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.rtb_reikins);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -286,6 +298,8 @@
             this.Controls.Add(this.tb_platums);
             this.Controls.Add(this.tb_veltijums);
             this.Controls.Add(this.tb_vards);
+            this.ForeColor = System.Drawing.Color.DimGray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -309,12 +323,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox rtb_reikins;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Dzest;
         private System.Windows.Forms.TextBox dz_id;
+        private MetroFramework.Controls.MetroButton button1;
     }
 }
 

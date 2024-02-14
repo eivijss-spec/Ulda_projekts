@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.SQLite;
+using MetroFramework.Components;
 
 namespace Ulda_problemas
 {
@@ -88,32 +89,12 @@ namespace Ulda_problemas
                                    $"PVN summa: {PVN_summa:C}\n" +
                                    $"Rekina summa: {rekina_summa:C}\n";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             }
             else
             {
                 // izvada tekstu ja ir kaut kas nepareiz
                 rtb_reikins.Text = "lohs tu ievadi pareizi.";
             }
-
-
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -134,12 +115,6 @@ namespace Ulda_problemas
 
 
                 a.Close();
-
-
-
-
-
-
             }
         }
 
@@ -183,11 +158,11 @@ namespace Ulda_problemas
 
                     using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                     {
-                        // Use parameters to prevent SQL injection
+                        // Pievieno dataubazei notiektas kolonas
                         sqlite_cmd.CommandText = "INSERT INTO Ulda(Vards, Velejums, platums, augstums, Garums, cena) " +
                                                  "VALUES(@Vards, @Velejums, @platums, @augstums, @Garums, @cena);";
 
-                        // Add parameters to the command
+                        // pievieno tb vertibas datubazes kolonam
                         sqlite_cmd.Parameters.AddWithValue("@Vards", tb_vards.Text);
                         sqlite_cmd.Parameters.AddWithValue("@Velejums", tb_veltijums.Text);
                         sqlite_cmd.Parameters.AddWithValue("@platums", tb_platums.Text);
@@ -195,7 +170,7 @@ namespace Ulda_problemas
                         sqlite_cmd.Parameters.AddWithValue("@Garums", tb_garums.Text);
                         sqlite_cmd.Parameters.AddWithValue("@cena", tb_cena.Text);
 
-                        // Execute the command
+                        // šaujam
                         sqlite_cmd.ExecuteNonQuery();
                     }
                 }
@@ -251,6 +226,11 @@ namespace Ulda_problemas
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dz_id_TextChanged(object sender, EventArgs e)
         {
 
         }

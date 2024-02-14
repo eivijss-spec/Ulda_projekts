@@ -80,3 +80,6 @@ Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\ru\Microsoft.Data.
 Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\obj\Debug\Ulda_problemas.csproj.CopyComplete
+Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\MetroFramework.Design.dll
+Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\MetroFramework.dll
+Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\MetroFramework.Fonts.dll
