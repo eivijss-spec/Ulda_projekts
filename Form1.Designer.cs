@@ -47,14 +47,22 @@
             this.label7 = new System.Windows.Forms.Label();
             this.Dzest = new System.Windows.Forms.Button();
             this.dz_id = new System.Windows.Forms.TextBox();
-            this.button1 = new MetroFramework.Controls.MetroButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_vards
             // 
             this.tb_vards.BackColor = System.Drawing.Color.White;
             this.tb_vards.ForeColor = System.Drawing.Color.Black;
-            this.tb_vards.Location = new System.Drawing.Point(35, 35);
+            this.tb_vards.Location = new System.Drawing.Point(46, 138);
             this.tb_vards.Name = "tb_vards";
             this.tb_vards.Size = new System.Drawing.Size(100, 20);
             this.tb_vards.TabIndex = 0;
@@ -64,7 +72,7 @@
             // 
             this.tb_veltijums.BackColor = System.Drawing.Color.White;
             this.tb_veltijums.ForeColor = System.Drawing.Color.Black;
-            this.tb_veltijums.Location = new System.Drawing.Point(35, 112);
+            this.tb_veltijums.Location = new System.Drawing.Point(46, 203);
             this.tb_veltijums.Name = "tb_veltijums";
             this.tb_veltijums.Size = new System.Drawing.Size(100, 20);
             this.tb_veltijums.TabIndex = 1;
@@ -74,7 +82,7 @@
             // 
             this.tb_platums.BackColor = System.Drawing.Color.White;
             this.tb_platums.ForeColor = System.Drawing.Color.Black;
-            this.tb_platums.Location = new System.Drawing.Point(35, 178);
+            this.tb_platums.Location = new System.Drawing.Point(46, 260);
             this.tb_platums.Name = "tb_platums";
             this.tb_platums.Size = new System.Drawing.Size(100, 20);
             this.tb_platums.TabIndex = 2;
@@ -84,7 +92,7 @@
             // 
             this.tb_cena.BackColor = System.Drawing.Color.White;
             this.tb_cena.ForeColor = System.Drawing.Color.Black;
-            this.tb_cena.Location = new System.Drawing.Point(35, 272);
+            this.tb_cena.Location = new System.Drawing.Point(46, 453);
             this.tb_cena.Name = "tb_cena";
             this.tb_cena.Size = new System.Drawing.Size(100, 20);
             this.tb_cena.TabIndex = 3;
@@ -94,9 +102,9 @@
             // 
             this.tb_garums.BackColor = System.Drawing.Color.White;
             this.tb_garums.ForeColor = System.Drawing.Color.Black;
-            this.tb_garums.Location = new System.Drawing.Point(152, 178);
+            this.tb_garums.Location = new System.Drawing.Point(46, 388);
             this.tb_garums.Name = "tb_garums";
-            this.tb_garums.Size = new System.Drawing.Size(119, 20);
+            this.tb_garums.Size = new System.Drawing.Size(100, 20);
             this.tb_garums.TabIndex = 4;
             this.tb_garums.TextChanged += new System.EventHandler(this.tb_garums_TextChanged);
             // 
@@ -104,7 +112,7 @@
             // 
             this.tb_augstums.BackColor = System.Drawing.Color.White;
             this.tb_augstums.ForeColor = System.Drawing.Color.Black;
-            this.tb_augstums.Location = new System.Drawing.Point(286, 178);
+            this.tb_augstums.Location = new System.Drawing.Point(46, 314);
             this.tb_augstums.Name = "tb_augstums";
             this.tb_augstums.Size = new System.Drawing.Size(100, 20);
             this.tb_augstums.TabIndex = 5;
@@ -113,9 +121,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(50, 20);
+            this.label1.Location = new System.Drawing.Point(57, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 6;
@@ -125,9 +133,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(38, 96);
+            this.label2.Location = new System.Drawing.Point(57, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 7;
@@ -137,9 +145,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(50, 162);
+            this.label3.Location = new System.Drawing.Point(61, 237);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 8;
@@ -149,9 +157,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(174, 162);
+            this.label4.Location = new System.Drawing.Point(57, 358);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 9;
@@ -161,9 +169,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(297, 162);
+            this.label5.Location = new System.Drawing.Point(57, 298);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 10;
@@ -173,9 +181,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(38, 242);
+            this.label6.Location = new System.Drawing.Point(57, 426);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 13);
             this.label6.TabIndex = 11;
@@ -184,11 +192,11 @@
             // 
             // rtb_reikins
             // 
-            this.rtb_reikins.BackColor = System.Drawing.Color.White;
+            this.rtb_reikins.BackColor = System.Drawing.Color.LightGray;
             this.rtb_reikins.ForeColor = System.Drawing.Color.Black;
-            this.rtb_reikins.Location = new System.Drawing.Point(456, 72);
+            this.rtb_reikins.Location = new System.Drawing.Point(200, 4);
             this.rtb_reikins.Name = "rtb_reikins";
-            this.rtb_reikins.Size = new System.Drawing.Size(327, 289);
+            this.rtb_reikins.Size = new System.Drawing.Size(534, 299);
             this.rtb_reikins.TabIndex = 13;
             this.rtb_reikins.Text = "";
             this.rtb_reikins.TextChanged += new System.EventHandler(this.rtb_reikins_TextChanged);
@@ -197,9 +205,9 @@
             // 
             this.button11.BackColor = System.Drawing.Color.White;
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(508, 18);
+            this.button11.Location = new System.Drawing.Point(32, 19);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(216, 44);
+            this.button11.Size = new System.Drawing.Size(262, 44);
             this.button11.TabIndex = 14;
             this.button11.Text = "Reiķins";
             this.button11.UseVisualStyleBackColor = false;
@@ -209,9 +217,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(456, 367);
+            this.button2.Location = new System.Drawing.Point(32, 76);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(327, 44);
+            this.button2.Size = new System.Drawing.Size(262, 44);
             this.button2.TabIndex = 15;
             this.button2.Text = "Saglabat faila";
             this.button2.UseVisualStyleBackColor = false;
@@ -221,9 +229,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(456, 418);
+            this.button3.Location = new System.Drawing.Point(32, 138);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(327, 47);
+            this.button3.Size = new System.Drawing.Size(262, 47);
             this.button3.TabIndex = 17;
             this.button3.Text = "Saglabat datubaze";
             this.button3.UseVisualStyleBackColor = false;
@@ -232,21 +240,22 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(83, 398);
+            this.label7.Location = new System.Drawing.Point(106, 100);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(113, 13);
             this.label7.TabIndex = 18;
-            this.label7.Text = "dz_ID";
+            this.label7.Text = "dzēst ID no datubāzes";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Dzest
             // 
             this.Dzest.BackColor = System.Drawing.Color.White;
             this.Dzest.ForeColor = System.Drawing.Color.Black;
-            this.Dzest.Location = new System.Drawing.Point(159, 418);
+            this.Dzest.Location = new System.Drawing.Point(79, 142);
             this.Dzest.Name = "Dzest";
-            this.Dzest.Size = new System.Drawing.Size(75, 23);
+            this.Dzest.Size = new System.Drawing.Size(150, 46);
             this.Dzest.TabIndex = 19;
             this.Dzest.Text = "dzēst";
             this.Dzest.UseVisualStyleBackColor = false;
@@ -256,55 +265,106 @@
             // 
             this.dz_id.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dz_id.ForeColor = System.Drawing.Color.Black;
-            this.dz_id.Location = new System.Drawing.Point(53, 418);
+            this.dz_id.Location = new System.Drawing.Point(90, 116);
             this.dz_id.Name = "dz_id";
-            this.dz_id.Size = new System.Drawing.Size(100, 20);
+            this.dz_id.Size = new System.Drawing.Size(129, 20);
             this.dz_id.TabIndex = 20;
             this.dz_id.TextChanged += new System.EventHandler(this.dz_id_TextChanged);
             // 
-            // button1
+            // panel1
             // 
-            this.button1.Location = new System.Drawing.Point(274, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 50);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Button1";
-            this.button1.UseSelectable = true;
+            this.panel1.BackColor = System.Drawing.Color.GreenYellow;
+            this.panel1.BackgroundImage = global::Ulda_problemas.Properties.Resources.lejupielāde__3_;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.tb_vards);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.tb_veltijums);
+            this.panel1.Controls.Add(this.tb_cena);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.tb_augstums);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.tb_platums);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.tb_garums);
+            this.panel1.ForeColor = System.Drawing.Color.Magenta;
+            this.panel1.Location = new System.Drawing.Point(-2, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(203, 497);
+            this.panel1.TabIndex = 21;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Crimson;
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.Dzest);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.dz_id);
+            this.panel3.Location = new System.Drawing.Point(518, 301);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(300, 200);
+            this.panel3.TabIndex = 22;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Cyan;
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button11);
+            this.panel4.Location = new System.Drawing.Point(200, 301);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(322, 200);
+            this.panel4.TabIndex = 23;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::Ulda_problemas.Properties.Resources.lejupielāde__1_1;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel5.Location = new System.Drawing.Point(101, 13);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(118, 75);
+            this.panel5.TabIndex = 21;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::Ulda_problemas.Properties.Resources.lejupielāde1;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(12, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(178, 72);
+            this.panel2.TabIndex = 12;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.LightGray;
+            this.panel6.Location = new System.Drawing.Point(731, 23);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(87, 280);
+            this.panel6.TabIndex = 24;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.BackgroundImage = global::Ulda_problemas.Properties.Resources.c31e0028ff648a5cd3f262e4b2a6085b;
             this.ClientSize = new System.Drawing.Size(815, 501);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dz_id);
-            this.Controls.Add(this.Dzest);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.rtb_reikins);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tb_augstums);
-            this.Controls.Add(this.tb_garums);
-            this.Controls.Add(this.tb_cena);
-            this.Controls.Add(this.tb_platums);
-            this.Controls.Add(this.tb_veltijums);
-            this.Controls.Add(this.tb_vards);
-            this.ForeColor = System.Drawing.Color.DimGray;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.ForeColor = System.Drawing.Color.Maroon;
             this.Name = "Form1";
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -329,7 +389,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Dzest;
         private System.Windows.Forms.TextBox dz_id;
-        private MetroFramework.Controls.MetroButton button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 

@@ -10,10 +10,11 @@ using System.Windows.Forms;
 using System.IO;
 using System.Data.SQLite;
 using MetroFramework.Components;
+using MetroFramework.Forms;
 
 namespace Ulda_problemas
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {
         public Form1()
         {
@@ -93,7 +94,7 @@ namespace Ulda_problemas
             else
             {
                 // izvada tekstu ja ir kaut kas nepareiz
-                rtb_reikins.Text = "lohs tu ievadi pareizi.";
+                rtb_reikins.Text = "Kartupelis esi? Ievadi pareizi!";
             }
         }
 
@@ -115,6 +116,7 @@ namespace Ulda_problemas
 
 
                 a.Close();
+                MessageBox.Show("saglabāts failā");
             }
         }
 
@@ -172,6 +174,7 @@ namespace Ulda_problemas
 
                         // šaujam
                         sqlite_cmd.ExecuteNonQuery();
+                        MessageBox.Show("Saglabāts datubāzē");
                     }
                 }
             }
@@ -211,18 +214,28 @@ namespace Ulda_problemas
 
         private void Dzest_Click(object sender, EventArgs e)
         {
-
+            if (dz_id.Text != "")
             {
-                SQLiteConnection sqlite_conn;
-                sqlite_conn = CreateConeection();
+                {
+                    SQLiteConnection sqlite_conn;
+                    sqlite_conn = CreateConeection();
 
-                SQLiteCommand sqlite_cmd;
-                sqlite_cmd = sqlite_conn.CreateCommand();
-                sqlite_cmd.CommandText = "DELETE FROM Ulda WHERE ID=" + dz_id.Text + ";";
-                sqlite_cmd.ExecuteNonQuery();
-                dz_id.Clear();
+                    SQLiteCommand sqlite_cmd;
+                    sqlite_cmd = sqlite_conn.CreateCommand();
+                    sqlite_cmd.CommandText = "DELETE FROM Ulda WHERE ID=" + dz_id.Text + ";";
+                    sqlite_cmd.ExecuteNonQuery();
+                    dz_id.Clear();
 
+                    MessageBox.Show("Izdzēsts no datubāzes");
+
+                }
             }
+            else
+            {
+                MessageBox.Show("Ievadiet id ko vēlaties dzēst");
+            }
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -233,6 +246,42 @@ namespace Ulda_problemas
         private void dz_id_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+      
+        private void X_But_Click(object sender, EventArgs e)
+        {
+        Application.Exit();
+        }
+
+        private void min_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hide_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ara_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

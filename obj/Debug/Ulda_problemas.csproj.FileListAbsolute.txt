@@ -83,3 +83,4 @@ Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\obj\Debug\Ulda_problemas.csp
 Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\MetroFramework.Design.dll
 Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\MetroFramework.dll
 Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\MetroFramework.Fonts.dll
+Z:\Programēšana 11g\Ulda_problemas\Ulda_problemas\bin\Debug\MetroSet UI.dll

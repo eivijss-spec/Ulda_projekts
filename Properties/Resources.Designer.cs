@@ -113,6 +113,26 @@ namespace Ulda_problemas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lejupielāde__2_ {
+            get {
+                object obj = ResourceManager.GetObject("lejupielāde (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lejupielāde__3_ {
+            get {
+                object obj = ResourceManager.GetObject("lejupielāde (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lejupielāde1 {
             get {
                 object obj = ResourceManager.GetObject("lejupielāde1", resourceCulture);

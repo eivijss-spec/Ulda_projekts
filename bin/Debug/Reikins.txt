@@ -1,6 +1,6 @@
-Klienta vārds 
-vēlējuma teksts 
-platums mm 
-garums mm 
-augstums mm 
-kokmatriāla cena 
+Klienta vārds Deivijs
+vēlējuma teksts kautkas
+platums mm 23
+garums mm 2
+augstums mm 4323
+kokmatriāla cena 8
