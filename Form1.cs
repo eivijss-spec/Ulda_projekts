@@ -214,9 +214,11 @@ namespace Ulda_problemas
 
         private void Dzest_Click(object sender, EventArgs e)
         {
-            if (dz_id.Text != "")
+            if (int.TryParse(dz_id.Text, out int id))
             {
                 {
+                   
+
                     SQLiteConnection sqlite_conn;
                     sqlite_conn = CreateConeection();
 
@@ -225,6 +227,9 @@ namespace Ulda_problemas
                     sqlite_cmd.CommandText = "DELETE FROM Ulda WHERE ID=" + dz_id.Text + ";";
                     sqlite_cmd.ExecuteNonQuery();
                     dz_id.Clear();
+
+
+
 
                     MessageBox.Show("Izdzēsts no datubāzes");
 
@@ -282,6 +287,30 @@ namespace Ulda_problemas
         private void ara_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void metroSetEllipse1_Click(object sender, EventArgs e)
+        {
+            SQLiteConnection sqlite_conn;
+            sqlite_conn = CreateConnection();
+
+            SQLiteCommand sqlite_cmd;
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            sqlite_cmd.CommandText = "SELECT * FROM Ulda";
+
+            DataTable sTable;
+            SQLiteDataAdapter sqlda = new SQLiteDataAdapter(sqlite_cmd);
+            using (sTable = new DataTable())
+            {
+                sqlda.Fill(sTable);
+                dataGridView1.DataSource = sTable;
+            }
+            sqlite_conn.Close();
         }
     }
 }

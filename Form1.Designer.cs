@@ -48,14 +48,18 @@
             this.Dzest = new System.Windows.Forms.Button();
             this.dz_id = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.metroSetEllipse1 = new MetroSet_UI.Controls.MetroSetEllipse();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_vards
@@ -196,7 +200,7 @@
             this.rtb_reikins.ForeColor = System.Drawing.Color.Black;
             this.rtb_reikins.Location = new System.Drawing.Point(200, 4);
             this.rtb_reikins.Name = "rtb_reikins";
-            this.rtb_reikins.Size = new System.Drawing.Size(534, 299);
+            this.rtb_reikins.Size = new System.Drawing.Size(534, 177);
             this.rtb_reikins.TabIndex = 13;
             this.rtb_reikins.Text = "";
             this.rtb_reikins.TextChanged += new System.EventHandler(this.rtb_reikins_TextChanged);
@@ -295,6 +299,16 @@
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::Ulda_problemas.Properties.Resources.lejupielāde1;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(12, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(178, 72);
+            this.panel2.TabIndex = 12;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Crimson;
@@ -308,6 +322,15 @@
             this.panel3.TabIndex = 22;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::Ulda_problemas.Properties.Resources.lejupielāde__1_1;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel5.Location = new System.Drawing.Point(101, 13);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(118, 75);
+            this.panel5.TabIndex = 21;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Cyan;
@@ -319,38 +342,60 @@
             this.panel4.Size = new System.Drawing.Size(322, 200);
             this.panel4.TabIndex = 23;
             // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = global::Ulda_problemas.Properties.Resources.lejupielāde__1_1;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel5.Location = new System.Drawing.Point(101, 13);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(118, 75);
-            this.panel5.TabIndex = 21;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::Ulda_problemas.Properties.Resources.lejupielāde1;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(12, 19);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(178, 72);
-            this.panel2.TabIndex = 12;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.LightGray;
+            this.panel6.Controls.Add(this.metroSetEllipse1);
             this.panel6.Location = new System.Drawing.Point(731, 23);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(87, 280);
             this.panel6.TabIndex = 24;
+            // 
+            // metroSetEllipse1
+            // 
+            this.metroSetEllipse1.BorderThickness = 7;
+            this.metroSetEllipse1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.metroSetEllipse1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroSetEllipse1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroSetEllipse1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetEllipse1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.metroSetEllipse1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.metroSetEllipse1.HoverTextColor = System.Drawing.Color.White;
+            this.metroSetEllipse1.Image = null;
+            this.metroSetEllipse1.ImageSize = new System.Drawing.Size(64, 64);
+            this.metroSetEllipse1.IsDerivedStyle = true;
+            this.metroSetEllipse1.Location = new System.Drawing.Point(0, 157);
+            this.metroSetEllipse1.Name = "metroSetEllipse1";
+            this.metroSetEllipse1.NormalBorderColor = System.Drawing.Color.Transparent;
+            this.metroSetEllipse1.NormalColor = System.Drawing.Color.Teal;
+            this.metroSetEllipse1.NormalTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.metroSetEllipse1.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.metroSetEllipse1.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.metroSetEllipse1.PressTextColor = System.Drawing.Color.White;
+            this.metroSetEllipse1.Size = new System.Drawing.Size(84, 123);
+            this.metroSetEllipse1.Style = MetroSet_UI.Enums.Style.Custom;
+            this.metroSetEllipse1.StyleManager = null;
+            this.metroSetEllipse1.TabIndex = 0;
+            this.metroSetEllipse1.Text = "Atvērt un atjaunina datubazi ";
+            this.metroSetEllipse1.ThemeAuthor = "Narwin";
+            this.metroSetEllipse1.ThemeName = "MetroDark";
+            this.metroSetEllipse1.Click += new System.EventHandler(this.metroSetEllipse1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(200, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(534, 123);
+            this.dataGridView1.TabIndex = 25;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 501);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
@@ -364,6 +409,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -395,6 +442,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private MetroSet_UI.Controls.MetroSetEllipse metroSetEllipse1;
     }
 }
 
