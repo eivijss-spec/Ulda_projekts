@@ -116,7 +116,7 @@
             // 
             this.tb_augstums.BackColor = System.Drawing.Color.White;
             this.tb_augstums.ForeColor = System.Drawing.Color.Black;
-            this.tb_augstums.Location = new System.Drawing.Point(46, 314);
+            this.tb_augstums.Location = new System.Drawing.Point(46, 316);
             this.tb_augstums.Name = "tb_augstums";
             this.tb_augstums.Size = new System.Drawing.Size(100, 20);
             this.tb_augstums.TabIndex = 5;
@@ -187,7 +187,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(57, 426);
+            this.label6.Location = new System.Drawing.Point(57, 420);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 13);
             this.label6.TabIndex = 11;
@@ -197,6 +197,7 @@
             // rtb_reikins
             // 
             this.rtb_reikins.BackColor = System.Drawing.Color.LightGray;
+            this.rtb_reikins.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.rtb_reikins.ForeColor = System.Drawing.Color.Black;
             this.rtb_reikins.Location = new System.Drawing.Point(200, 4);
             this.rtb_reikins.Name = "rtb_reikins";

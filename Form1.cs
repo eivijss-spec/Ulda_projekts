@@ -20,49 +20,13 @@ namespace Ulda_problemas
         {
             InitializeComponent();
         }
+       
 
-
-        private void tb_cena_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_platums_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_garums_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_veltijums_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_vards_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void rtb_reikins_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-
-
-
+        // vērtības kuras nemainās
         int darba_samaksa = 15;
         int PVN = 21;
+
+
         private void button1_Click(object sender, EventArgs e)
         {   //Pārveido vēlējumu stringu uz int
             string varda_ga = tb_veltijums.Text;
@@ -120,35 +84,7 @@ namespace Ulda_problemas
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -183,19 +119,14 @@ namespace Ulda_problemas
                 MessageBox.Show("Lūdzu ievadiet nosaukumu");
             }
         }
-
+        // izveido savienojumu ar dau bāzi
         static SQLiteConnection CreateConnection()
         {
             SQLiteConnection reikin = new SQLiteConnection("Data Source=reikin.db; Version=3; New=true; Compress=True;");
             return reikin;
         }
 
-
-
-
-
-
-
+        // izveido savienojumu ar dau bāzi
         static SQLiteConnection CreateConeection()
         {
             SQLiteConnection reikin;
@@ -212,12 +143,13 @@ namespace Ulda_problemas
             return reikin;
         }
 
+        //dzēst no datubāzes
         private void Dzest_Click(object sender, EventArgs e)
         {
             if (int.TryParse(dz_id.Text, out int id))
             {
                 {
-                   
+
 
                     SQLiteConnection sqlite_conn;
                     sqlite_conn = CreateConeection();
@@ -236,13 +168,93 @@ namespace Ulda_problemas
                 }
             }
             else
-            {
+            { // izvada ziņojumu ja ir nepareiza vertība ievadīta
                 MessageBox.Show("Ievadiet id ko vēlaties dzēst");
             }
+        }
+//Izvad atutu bazi uz ekrāna un atjaunina to
+        private void metroSetEllipse1_Click(object sender, EventArgs e)
+        {
+            SQLiteConnection sqlite_conn;
+            sqlite_conn = CreateConnection();
 
+            SQLiteCommand sqlite_cmd;
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            sqlite_cmd.CommandText = "SELECT * FROM Ulda";
+
+            DataTable sTable;
+            SQLiteDataAdapter sqlda = new SQLiteDataAdapter(sqlite_cmd);
+            using (sTable = new DataTable())
+            {
+                sqlda.Fill(sTable);
+                dataGridView1.DataSource = sTable;
+            }
+            sqlite_conn.Close();
+        }
+
+
+
+         private void tb_cena_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
+        private void tb_platums_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_garums_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_veltijums_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_vards_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void rtb_reikins_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+ private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -268,7 +280,7 @@ namespace Ulda_problemas
 
         }
 
-      
+      // cita x poga
         private void X_But_Click(object sender, EventArgs e)
         {
         Application.Exit();
@@ -283,7 +295,7 @@ namespace Ulda_problemas
         {
 
         }
-
+        // x poga
         private void ara_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -294,24 +306,7 @@ namespace Ulda_problemas
             
         }
 
-        private void metroSetEllipse1_Click(object sender, EventArgs e)
-        {
-            SQLiteConnection sqlite_conn;
-            sqlite_conn = CreateConnection();
-
-            SQLiteCommand sqlite_cmd;
-            sqlite_cmd = sqlite_conn.CreateCommand();
-            sqlite_cmd.CommandText = "SELECT * FROM Ulda";
-
-            DataTable sTable;
-            SQLiteDataAdapter sqlda = new SQLiteDataAdapter(sqlite_cmd);
-            using (sTable = new DataTable())
-            {
-                sqlda.Fill(sTable);
-                dataGridView1.DataSource = sTable;
-            }
-            sqlite_conn.Close();
-        }
+        
     }
 }
             
